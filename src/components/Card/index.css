@@ -1,0 +1,37 @@
+.Card {
+    background-color: rgb(52, 52, 52);
+    border-radius: 10px;
+    width: 170px;
+    height: auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.CardImage img {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 170px;
+}
+
+.CardTitle {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.CardDescription {
+    font-size: 12px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+}
