@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+        "id": 1,
+        "name": "Gustavo Aguiar Rosa",
+        "email": "gustavo.aguiar@example.com",
+        "cpf": "507.401.448-47"
+        },
+{
+        "id": 2,
+        "name": "Maria Eduarda Holanda Aguiar",
+        "email": "holandacardosomariaeduarda@gmail.com",
+        "cpf": "458.492.258-62"
+        }
+    ]
+}

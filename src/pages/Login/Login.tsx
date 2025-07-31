@@ -2,10 +2,13 @@ import './index.css'
 import './../../index.css'
 import Logo from './../../assets/logo.png';
 import { useState } from 'react';
+import User from '../../data/users.json';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
 
   const [cpf, setCpf] = useState('');
+  const navigate = useNavigate();
 
   const handleCpfChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if(e.target.value.length > 14) {
@@ -19,6 +22,16 @@ export default function Login() {
     setCpf(value);
   };
 
+  function loginByCpf() {
+    const user = User.users.find(user => user.cpf === cpf);
+    if (user) {
+      console.log('Login successful:', user);
+      navigate('/');
+    } else {
+      alert('Usuário não encontrado. Verifique o CPF e tente novamente.');
+    }
+  }
+
   return (
     <div className='Root'>
       <img className='Logo' src={Logo} alt="Logo" />
@@ -29,7 +42,7 @@ export default function Login() {
       placeholder="CPF" 
       onChange={ (e) => handleCpfChange(e)}
       value={cpf}/>
-      <button className='LoginBtn'>Entrar</button>
+      <button className='LoginBtn' onClick={loginByCpf}>Entrar</button>
     </div>
   );
 }
