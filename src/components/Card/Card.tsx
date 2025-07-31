@@ -1,6 +1,8 @@
 import { FaStar } from 'react-icons/fa';
 import './index.css';
 
+import { Link } from 'react-router-dom';
+
 type Book = {
   title: string;
   autor: string;
@@ -29,7 +31,7 @@ export default function Card({ bookInfo }: CardProps) {
 
   return (
     <>
-      <a href={bookInfo.link} target="_blank" rel="noopener noreferrer" className="CardLink">
+      <Link to={`/book/${bookInfo.id}`} className="CardLink">
         <div className="Card">
           <div className="CardImage">
             <img src={bookInfo.image} alt={bookInfo.title} />
@@ -43,7 +45,7 @@ export default function Card({ bookInfo }: CardProps) {
             ))}
           </div>
         </div>
-      </a>
+      </Link>
     </>
   )
 }
