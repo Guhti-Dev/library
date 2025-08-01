@@ -28,19 +28,19 @@
   margin-right: auto;
 }
 
-.userMenu{
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    background-color: rgb(43, 43, 43);
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    height: 45px;
+.userMenu {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  background-color: rgb(43, 43, 43);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 45px;
 }
 
-.userName{
+.userName {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 600;
@@ -49,10 +49,22 @@
   margin-left: 20px;
 }
 
-.userAvatar{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-left: 12px;
-    border: 2px solid rgb(62, 62, 62);
+.userAvatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 12px;
+  border: 2px solid rgb(62, 62, 62);
+}
+
+.addBookButton {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.87);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 45px;
 }

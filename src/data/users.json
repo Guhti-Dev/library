@@ -2,15 +2,29 @@
     "users": [
         {
         "id": 1,
-        "name": "Gustavo Aguiar Rosa",
+        "name": {
+            "first": "Gustavo",
+            "middle": "Aguiar",
+            "last": "Rosa"
+        },
+        "imageProfile": "https://github.com/Guhti-Dev.png",
+        "linkGithub": "https://github.com/Guhti-Dev",
         "email": "gustavo.aguiar@example.com",
-        "cpf": "507.401.448-47"
+        "cpf": "111.111.111-11",
+        "role": "admin"
         },
 {
         "id": 2,
-        "name": "Maria Eduarda Holanda Aguiar",
-        "email": "holandacardosomariaeduarda@gmail.com",
-        "cpf": "458.492.258-62"
+        "name": {
+            "first": "Gabriel",
+            "middle": "Aguiar",
+            "last": "Rosa"
+        },
+        "imageProfile": "https://github.com/Gabriel-Pink.png",
+        "linkGithub": "https://github.com/Gabriel-Pink",
+        "email": "exemplo@gmail.com",
+        "cpf": "222.222.222-22",
+        "role": "user"
         }
     ]
 }
