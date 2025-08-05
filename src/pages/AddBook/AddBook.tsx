@@ -41,7 +41,7 @@ export default function AddBook() {
       genre: formData.genre,
       description: formData.description,
       rating: parseInt(formData.rating) || 0,
-      image: formData.image || '',
+      image: formData.image || 'https://img.freepik.com/fotos-premium/livro-em-branco_856373-219.jpg',
       link: '',
       coment: []
     };
