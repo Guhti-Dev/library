@@ -83,7 +83,7 @@
     text-decoration: underline;
 }
 
-.ratingContainer{
+.ratingContainer {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -93,19 +93,25 @@
     font-size: 15px;
 }
 
-.avaliationsText{
+.avaliationsText {
     margin-right: 8px;
     font-size: 14px;
     color: #fff;
     font-weight: 500;
 }
 
-.commentText{
+.commentText {
     margin-bottom: 15px;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
+
+    .descriptionBook
+    .avaliationsText {
+        font-size: 12px;
+    }
+
 
     .bookPage {
         padding: 15px;
@@ -180,19 +186,19 @@
         text-align: center;
     }
 
-    .titleBook{
-        font-size: 2.5rem;
+    .titleBook {
+        font-size: 28px;
         font-weight: bold;
         margin-bottom: 15px;
         color: #fff;
     }
 
-.avaliationsText{
-    margin-right: 1px;
-    font-size: 14px;
-    color: #fff;
-    font-weight: 500;
-}
+    .avaliationsText {
+        margin-right: 1px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 500;
+    }
 
     .bookInfo p {
         font-size: 1.5rem;

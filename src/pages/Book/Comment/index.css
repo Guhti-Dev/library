@@ -39,6 +39,11 @@
         }
 
         .commentText {
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .commentDataDiv {
             text-align: left;
             width: 100%;
         }

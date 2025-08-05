@@ -29,8 +29,8 @@ export default function Comment({ comment }: { comment: CommentType }) {
                         <FaStar key={index} style={{ color: index < comment.rating ? 'gold' : '#ccc' }} />
                     ))}
                 </div>
-                <div className='commentText'>
-                    <p>{comment.text}</p>
+                <div className='commentDataDiv'>
+                    <p className='commentData'>{comment.text}</p>
                     <div />
                 </div>
             </div>
