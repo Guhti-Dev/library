@@ -1,6 +1,6 @@
 import './home.css';
 import Card from '../../components/Card/Card';
-import Menu from './Menu/menu';
+import Menu from '../../components/Menu/menu';
 import dataJson from '../../data/books.json';
 import { useEffect, useMemo, useState } from 'react';
 

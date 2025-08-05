@@ -1,0 +1,90 @@
+.menuComponent {
+  display: flex;
+  background-color: #1f1f1f;
+  align-items: center;
+  position: relative;
+  padding: 20px 40px;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  background-color: rgb(43, 43, 43);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 45px;
+}
+
+.userName {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.userAvatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 12px;
+  border: 2px solid rgb(62, 62, 62);
+}
+
+.addBookButton {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.87);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 45px;
+}
+
+.userDropdown {
+  position: relative;
+}
+
+.userTrigger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropdownMenu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  background: #2c2c2c;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  min-width: 150px;
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+.dropdownItem {
+  display: block;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+.dropdownItem:hover {
+  background: #3a3a3a;
+}

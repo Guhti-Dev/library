@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './index.css';
 import data from '../../data/books.json';
+import SimpleMenu from '../../components/Menu/SimpleMenu/simpleMenu';
 
 export default function AddBook() {
   const navigate = useNavigate();
@@ -51,23 +52,27 @@ export default function AddBook() {
   };
 
   return (
-    <div className='add-book-Form-Div'>
-      <form className='add-book-Form' onSubmit={handleSubmit}>
-        <div className='titleDiv'>
-          <h1 className='titleName'>Cadastro de Livros</h1>
-        </div>
-        <input name="title" type="text" placeholder="Título" className="add-book-Input" onChange={handleChange} required />
-        <input name="autor" type="text" placeholder="Autor" className="add-book-Input" onChange={handleChange} required />
-        <input name="year" type="number" placeholder="Ano" className="add-book-Input" onChange={handleChange} />
-        <input name="genre" type="text" placeholder="Gênero" className="add-book-Input" onChange={handleChange} />
-        <input name="description" type="text" placeholder="Descrição" className="add-book-Input" onChange={handleChange} />
-        <input name="image" type="text" placeholder="URL da Imagem" className="add-book-Input" onChange={handleChange} />
-        <input name="rating" type="number" placeholder="Nota (0-5)" min="0" max="5" className="add-book-Input" onChange={handleChange} />
-        <div className='buttons'>
-          <button type="submit" className='add-book-Button'>Cadastrar</button>
-          <button type="reset" onClick={() => navigate('/')} className='cancel-book-Button'>Cancelar</button>
-        </div>
-      </form>
-    </div>
+    <>
+      <SimpleMenu/>
+      <div className='add-book-Form-Div'>
+        <form className='add-book-Form' onSubmit={handleSubmit}>
+          <div className='titleDiv'>
+            <h1 className='titleName'>Cadastro de Livros</h1>
+          </div>
+          <input name="title" type="text" placeholder="Título" className="add-book-Input" onChange={handleChange} required />
+          <input name="autor" type="text" placeholder="Autor" className="add-book-Input" onChange={handleChange} required />
+          <input name="year" type="number" placeholder="Ano" className="add-book-Input" onChange={handleChange} />
+          <input name="genre" type="text" placeholder="Gênero" className="add-book-Input" onChange={handleChange} />
+          <input name="description" type="text" placeholder="Descrição" className="add-book-Input" onChange={handleChange} />
+          <input name="image" type="text" placeholder="URL da Imagem" className="add-book-Input" onChange={handleChange} />
+          <input name="rating" type="number" placeholder="Nota (0-5)" min="0" max="5" className="add-book-Input" onChange={handleChange} />
+          <div className='buttons'>
+            <button type="submit" className='add-book-Button'>Cadastrar</button>
+            <button type="reset" onClick={() => navigate('/')} className='cancel-book-Button'>Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </>
+
   );
 }

@@ -3,12 +3,7 @@ import logo from '../../../assets/logo.png';
 import { Link, useNavigate } from 'react-router-dom';
 import './menu.css';
 
-interface MenuProps {
-  searchTerm: string;
-  setSearchTerm: (value: string) => void;
-}
-
-export default function Menu({ searchTerm, setSearchTerm }: MenuProps) {
+export default function SimpleMenu() {
   const user = JSON.parse(localStorage.getItem("user") || "{}");
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -31,15 +26,7 @@ export default function Menu({ searchTerm, setSearchTerm }: MenuProps) {
 
   return (
     <div className='menuComponent'>
-      <img src={logo} alt="Logo" className='logo' />
-      <input
-        type="text"
-        placeholder="Pesquisar"
-        className='searchInput'
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-
+      <a href='/'><img src={logo} alt="Logo" className='logo' /></a>
       <div ref={ref} className="userDropdown">
         <button
           className="userTrigger"
