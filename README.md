@@ -1,69 +1,50 @@
-# React + TypeScript + Vite
+# 📚 Biblioteca Interativa
+Este é um projeto de biblioteca digital com sistema de login via CPF, onde usuários podem acessar livros, fazer avaliações, e interagir com a plataforma.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚀 Tecnologias Utilizadas
 
-Currently, two official plugins are available:
+- React
+- TypeScript
+- Tailwind CSS
+- React Router
+- LocalStorage (mock de autenticação)
+- Ícones com react-icons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🔐 Logins disponíveis para testes
+Use um dos CPFs abaixo para acessar o sistema:
 
-## Expanding the ESLint configuration
+# Tipo de Usuário	CPF
+**Administrador**	111.111.111-11
+**Usuário comum**	222.222.222-22
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 📦 Instalação - Clone o repositório
+git clone https://github.com/Guhti-Dev/library
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# Acesse a pasta do projeto
+cd library
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+# Instale as dependências
+npm install
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Inicie o servidor de desenvolvimento
+npm run dev
+A aplicação abrirá automaticamente no navegador em http://localhost:5173 (ou porta equivalente do Vite).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# 🎯 Funcionalidades
+- Login via CPF
+- Cards de livros com avaliação em estrelas
+- Menu superior com pesquisa e dropdown de usuário
+- Rotas protegidas (simulação simples)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 📁 Estrutura do Projeto (resumo)
+src/
+├── assets/             # Imagens e logos
+├── components/         # Componentes reutilizáveis (Menu, Card, etc.)
+├── pages/              # Páginas principais (Login, Home, Book)
+├── data/               # Arquivos .json com usuários e livros
+├── styles/             # Arquivos CSS/Tailwind
+├── App.tsx
+└── main.tsx
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# 🤝 Contribuições
+Sinta-se à vontade para abrir issues, forks ou pull requests!
