@@ -1,0 +1,203 @@
+.bookContainer {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bookImageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.reserveButton {
+    margin-top: 15px;
+    background-color: #28a745;
+    color: #fff;
+}
+
+.deleteButton {
+    margin-top: 10px;
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.bookHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.bookImage {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bookInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bookInfo h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.bookInfo h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #777;
+}
+
+.bookInfo p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ededed;
+}
+
+.toggleDescriptionButton {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.toggleDescriptionButton:hover {
+    text-decoration: underline;
+}
+
+.ratingContainer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1px;
+    font-size: 15px;
+}
+
+.avaliationsText{
+    margin-right: 8px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.commentText{
+    margin-bottom: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    .bookPage {
+        padding: 15px;
+    }
+
+    .bookContainer {
+        max-width: 100%;
+        border-radius: 12px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bookHeader {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        width: 100%;
+    }
+
+    .bookImageContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bookImage {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .reserveButton,
+    .deleteButton {
+        margin-top: 15px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .reserveButton {
+        background-color: #28a745;
+        font-size: 1.2rem;
+        line-height: 1;
+        color: #fff;
+    }
+
+    .deleteButton {
+        background-color: #dc3545;
+        font-size: 1.2rem;
+        line-height: 1;
+        color: #fff;
+    }
+
+    .bookInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .titleBook{
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+
+.avaliationsText{
+    margin-right: 1px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
+    .bookInfo p {
+        font-size: 1.5rem;
+        line-height: 1;
+        color: #ededed;
+        padding: 0 10px;
+    }
+}

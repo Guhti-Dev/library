@@ -1,0 +1,46 @@
+.commentDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.userComment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profilePicture {
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(125, 125, 125);
+}
+
+.userNameComment {
+    margin-left: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    @media (max-width: 768px) {
+
+        .ratingContainer{
+            margin-left: 10px;
+        }
+
+        .commentInfo {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .commentText {
+            text-align: left;
+            width: 100%;
+        }
+    }
+}

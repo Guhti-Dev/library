@@ -1,8 +1,8 @@
 {
     "users": [
         {
-        "id": 1,
-        "name": {
+        "userId": 1,
+        "userName": {
             "first": "Gustavo",
             "middle": "Aguiar",
             "last": "Rosa"
@@ -14,8 +14,8 @@
         "role": "admin"
         },
 {
-        "id": 2,
-        "name": {
+        "userId": 2,
+        "userName": {
             "first": "Gabriel",
             "middle": "Aguiar",
             "last": "Rosa"

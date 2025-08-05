@@ -26,7 +26,7 @@ export default function Login() {
     const user = User.users.find(user => user.cpf === cpf);
     if (user) {
       localStorage.setItem("user", JSON.stringify(user));
-      navigate('/book');
+      navigate('/');
     } else {
       alert('Usuário não encontrado. Verifique o CPF e tente novamente.');
     }

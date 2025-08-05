@@ -10,9 +10,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={ <Login /> } />
+        <Route path="/login" element={ <Login /> } />
         <Route path="*" element={ <Login /> } />
-        <Route path="/book" element={ isAuthenticated ? <Home /> : <Login /> } />
+        <Route path="/" element={ isAuthenticated ? <Home /> : <Login /> } />
         <Route path="/book/:id" element={ isAuthenticated ? <Book /> : <Login /> } />
         <Route path="/addBook" element={ isAuthenticated ? <AddBook /> : <Login /> } />
       </Routes>

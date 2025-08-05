@@ -14,7 +14,6 @@ export default function Menu({ searchTerm, setSearchTerm }: MenuProps) {
   const ref = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
 
-  // Fecha dropdown se clicar fora
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (ref.current && !ref.current.contains(e.target as Node)) {
@@ -27,7 +26,7 @@ export default function Menu({ searchTerm, setSearchTerm }: MenuProps) {
 
   function logOut() {
     localStorage.removeItem("user");
-    navigate("/");
+    navigate("/login");
   }
 
   return (
@@ -48,18 +47,14 @@ export default function Menu({ searchTerm, setSearchTerm }: MenuProps) {
           aria-expanded={open}
         >
           <div className="userMenu">
-            <p className="userName">{user.name?.first}</p>
+            <p className="userName">{user.userName.first}</p>
             <img src={user.imageProfile} alt="Avatar" className="userAvatar" />
           </div>
         </button>
 
         {open && (
           <div className="dropdownMenu">
-            <Link to="/profile" className="dropdownItem">Meu Perfil</Link>
-            <Link to="/settings" className="dropdownItem">Configurações</Link>
-            { user.role === 'admin' && (
-              <Link to="/addBook" className="dropdownItem">Cadastrar Livros</Link>
-            )}
+            { user.role === 'admin' && (<Link to="/addBook" className="dropdownItem">Cadastrar Livros</Link>)}
             <button onClick={logOut} className="dropdownItem">Sair</button>
           </div>
         )}
