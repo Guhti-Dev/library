@@ -26,6 +26,7 @@ export default function Menu({ searchTerm, setSearchTerm }: MenuProps) {
 
   function logOut() {
     localStorage.removeItem("user");
+    localStorage.removeItem("books");
     navigate("/login");
   }
 
